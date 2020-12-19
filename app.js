@@ -15,6 +15,11 @@ const app = Vue.createApp({
 
         axios.
         get(this.url)
+        .then( 
+           (response => response.json())
+           
+
+        }).
         .then( (response) => {{
                 this.articles = response.data.articles
                // this.articlesCount = this.articles
@@ -22,6 +27,7 @@ const app = Vue.createApp({
               }
 
         })
+        
      
 
       },
