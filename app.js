@@ -16,7 +16,7 @@ const app = Vue.createApp({
         axios.
         get(this.url)
         .then( 
-           (response => response.json())
+           
            
 
         )
