@@ -19,7 +19,7 @@ const app = Vue.createApp({
            (response => response.json())
            
 
-        }).
+        )
         .then( (response) => {{
                 this.articles = response.data.articles
                // this.articlesCount = this.articles
