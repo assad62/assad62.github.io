@@ -4,7 +4,7 @@ const app = Vue.createApp({
     data(){
         return{
            
-            url: 'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=hk&apiKey=a5ecf0100b0149e6a1406584949890a8',
+            url: 'https://newsapi-topnews-hk.herokuapp.com/v1/topnews',
             articles: [],
             articlesCount: []
            
