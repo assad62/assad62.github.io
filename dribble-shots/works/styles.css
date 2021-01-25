@@ -14,7 +14,7 @@ body {
   background-size: cover;
   height: 100vh;
   width: 50%;
-  transition: background 1s linear;
+  transition: background 3s linear;
 }
 
 .left {
