@@ -1,19 +1,22 @@
 html {
+  margin: 0;
+  padding: 0;
   font-size: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
   display: flex;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
-
+* {
+  box-sizing: border-box;
+}
 #right {
   background: url('./images/4.jpg');
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 50%;
   transition: background 1s ease-in;
 }
@@ -21,7 +24,7 @@ body {
 .left {
   margin-top: 3rem;
   margin-left: 5rem;
-  height: 100vh;
+  min-height: 100vh;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -78,10 +81,8 @@ body {
     flex-direction: column;
   }
 
-  .right {
-    width: 100vw;
-    height: 50vh;
-    visibility: hidden;
+  #right {
+    display: none;
   }
 
   .left {
