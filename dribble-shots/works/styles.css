@@ -5,6 +5,11 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden}
+
 body {
   display: flex;
   margin: 0;
