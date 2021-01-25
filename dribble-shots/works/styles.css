@@ -1,0 +1,90 @@
+html {
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+#right {
+  background: url('./images/4.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 50%;
+  transition: background 1s linear;
+}
+
+.left {
+  margin-top: 3rem;
+  margin-left: 5rem;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .logo p {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 8rem;
+  color: black;
+}
+
+.logo span {
+  font-weight: 800;
+}
+
+.left h1 {
+  font-weight: 400;
+  font-size: 6rem;
+  margin: 0px;
+  margin-bottom: 3rem;
+}
+
+.left p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: grey;
+}
+
+.left .content {
+  height: 100%;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* line-height: 5rem; */
+}
+
+.left .content button {
+  width: 30%;
+  margin-top: 6rem;
+
+  background-color: white;
+  border: 1px solid black;
+
+  color: black;
+  padding: 0.8rem 1.8rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .right {
+    width: 100vw;
+    height: 50vh;
+    visibility: hidden;
+  }
+
+  .left {
+    width: 100vw;
+    height: 100vh;
+  }
+}
